@@ -1,0 +1,1021 @@
+{
+    "name": "root",
+    "category": "",
+    "vars": [],
+    "nodes": [
+        {
+            "package": "PyFlowBase",
+            "lib": "RandomLib",
+            "type": "randint",
+            "owningGraphName": "root",
+            "name": "randint",
+            "uuid": "14533e9a-2bff-41d9-97ed-4bfb3d72fe31",
+            "inputs": [
+                {
+                    "name": "start",
+                    "package": "PyFlowBase",
+                    "fullName": "randint_start",
+                    "dataType": "IntPin",
+                    "direction": 0,
+                    "value": "0",
+                    "uuid": "575961fb-fb6d-4b41-b4d3-04c23c2750f4",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "start",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "end",
+                    "package": "PyFlowBase",
+                    "fullName": "randint_end",
+                    "dataType": "IntPin",
+                    "direction": 0,
+                    "value": "5",
+                    "uuid": "8411d69b-cdf6-4766-a2da-4bec425bc7f8",
+                    "linkedTo": [],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "end",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "Result",
+                    "package": "PyFlowBase",
+                    "fullName": "randint_Result",
+                    "dataType": "IntPin",
+                    "direction": 1,
+                    "value": "0",
+                    "uuid": "18f99ea5-c6c7-4517-97c9-9d42ba06888e",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "randint",
+                            "outPinId": 1,
+                            "rhsNodeName": "delay",
+                            "inPinId": 2,
+                            "lhsNodeUid": "14533e9a-2bff-41d9-97ed-4bfb3d72fe31",
+                            "rhsNodeUid": "c028f8ca-6a47-45c7-9cf4-7d476e1ff7ad"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Result",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "18f99ea5-c6c7-4517-97c9-9d42ba06888e",
+                                "destinationUUID": "495e08af-ba2b-4c9c-8cfa-b6115e346054",
+                                "sourceName": "randint_Result",
+                                "destinationName": "delay_Delay(s)",
+                                "uuid": "779d649b-ed5e-491f-9440-35a4c4267876",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "randint"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">randint</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -456.96610169491476,
+            "y": -206.3559322033898
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": null,
+            "type": "delay",
+            "owningGraphName": "root",
+            "name": "delay",
+            "uuid": "c028f8ca-6a47-45c7-9cf4-7d476e1ff7ad",
+            "inputs": [
+                {
+                    "name": "inExec",
+                    "package": "PyFlowBase",
+                    "fullName": "delay_inExec",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "15e6787b-3e7b-4316-8ac9-e1d56808efea",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "doN",
+                            "outPinId": 1,
+                            "rhsNodeName": "delay",
+                            "inPinId": 1,
+                            "lhsNodeUid": "3d5b40d7-afad-46b6-b17d-28b00d7f331d",
+                            "rhsNodeUid": "c028f8ca-6a47-45c7-9cf4-7d476e1ff7ad"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "inExec",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "5a4cf015-207d-436b-b27d-869e375b5996",
+                                "destinationUUID": "15e6787b-3e7b-4316-8ac9-e1d56808efea",
+                                "sourceName": "doN_Exit",
+                                "destinationName": "delay_inExec",
+                                "uuid": "e76b2375-38c6-46d5-b044-8ce811bd28ec",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Delay(s)",
+                    "package": "PyFlowBase",
+                    "fullName": "delay_Delay(s)",
+                    "dataType": "FloatPin",
+                    "direction": 0,
+                    "value": "0.0",
+                    "uuid": "495e08af-ba2b-4c9c-8cfa-b6115e346054",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "randint",
+                            "outPinId": 1,
+                            "rhsNodeName": "delay",
+                            "inPinId": 2,
+                            "lhsNodeUid": "14533e9a-2bff-41d9-97ed-4bfb3d72fe31",
+                            "rhsNodeUid": "c028f8ca-6a47-45c7-9cf4-7d476e1ff7ad"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Delay(s)",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "18f99ea5-c6c7-4517-97c9-9d42ba06888e",
+                                "destinationUUID": "495e08af-ba2b-4c9c-8cfa-b6115e346054",
+                                "sourceName": "randint_Result",
+                                "destinationName": "delay_Delay(s)",
+                                "uuid": "779d649b-ed5e-491f-9440-35a4c4267876",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "outExec",
+                    "package": "PyFlowBase",
+                    "fullName": "delay_outExec",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "d82e5e05-d6de-40fa-870f-ca4c36d3f3d0",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "delay",
+                            "outPinId": 1,
+                            "rhsNodeName": "imageDisplay",
+                            "inPinId": 1,
+                            "lhsNodeUid": "c028f8ca-6a47-45c7-9cf4-7d476e1ff7ad",
+                            "rhsNodeUid": "dbc28dbe-5128-4d22-b381-36a2f94e2b5d"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "outExec",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "d82e5e05-d6de-40fa-870f-ca4c36d3f3d0",
+                                "destinationUUID": "54508db6-8d70-49a3-b1b7-49fd70ad587c",
+                                "sourceName": "delay_outExec",
+                                "destinationName": "imageDisplay_inExec",
+                                "uuid": "9356993f-8ff8-4527-a59f-df6119939b8c",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "delay"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">delay</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -326.0847457627116,
+            "y": -276.1525423728815
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": null,
+            "type": "doN",
+            "owningGraphName": "root",
+            "name": "doN",
+            "uuid": "3d5b40d7-afad-46b6-b17d-28b00d7f331d",
+            "inputs": [
+                {
+                    "name": "Enter",
+                    "package": "PyFlowBase",
+                    "fullName": "doN_Enter",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "131498d1-4d0f-4099-af84-12f76a6b21f6",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Enter",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "N",
+                    "package": "PyFlowBase",
+                    "fullName": "doN_N",
+                    "dataType": "IntPin",
+                    "direction": 0,
+                    "value": "3",
+                    "uuid": "a9eb3fe0-3cbb-4c7b-b6a4-6d688134ca34",
+                    "linkedTo": [],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "N",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "Reset",
+                    "package": "PyFlowBase",
+                    "fullName": "doN_Reset",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "bf2b9ad7-b8e4-4d29-9b7a-3cc9016d26f3",
+                    "linkedTo": [],
+                    "pinIndex": 3,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Reset",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "Exit",
+                    "package": "PyFlowBase",
+                    "fullName": "doN_Exit",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "5a4cf015-207d-436b-b27d-869e375b5996",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "doN",
+                            "outPinId": 1,
+                            "rhsNodeName": "delay",
+                            "inPinId": 1,
+                            "lhsNodeUid": "3d5b40d7-afad-46b6-b17d-28b00d7f331d",
+                            "rhsNodeUid": "c028f8ca-6a47-45c7-9cf4-7d476e1ff7ad"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Exit",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "5a4cf015-207d-436b-b27d-869e375b5996",
+                                "destinationUUID": "15e6787b-3e7b-4316-8ac9-e1d56808efea",
+                                "sourceName": "doN_Exit",
+                                "destinationName": "delay_inExec",
+                                "uuid": "e76b2375-38c6-46d5-b044-8ce811bd28ec",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Counter",
+                    "package": "PyFlowBase",
+                    "fullName": "doN_Counter",
+                    "dataType": "IntPin",
+                    "direction": 1,
+                    "value": "3",
+                    "uuid": "139dcd41-fff0-4c4c-a08e-2a15da219be4",
+                    "linkedTo": [],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Counter",
+                        "wires": {}
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "doN"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">doN</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -474.49152542372894,
+            "y": -313.49152542372883
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": null,
+            "type": "imageDisplay",
+            "owningGraphName": "root",
+            "name": "imageDisplay",
+            "uuid": "dbc28dbe-5128-4d22-b381-36a2f94e2b5d",
+            "inputs": [
+                {
+                    "name": "path",
+                    "package": "PyFlowBase",
+                    "fullName": "imageDisplay_path",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"D:\\\\VS_code\\\\PyFlow\\\\PyFlow\\\\UI\\\\resources\\\\binocular.png\"",
+                    "uuid": "2a7708dc-363e-45be-93f1-17c4f7b465d3",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "add",
+                            "outPinId": 1,
+                            "rhsNodeName": "imageDisplay",
+                            "inPinId": 2,
+                            "lhsNodeUid": "7d7550a6-a4e9-42c5-8376-0799ad256b8f",
+                            "rhsNodeUid": "dbc28dbe-5128-4d22-b381-36a2f94e2b5d"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "path",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "feaa050b-7137-4521-b7fa-137bb74d792d",
+                                "destinationUUID": "2a7708dc-363e-45be-93f1-17c4f7b465d3",
+                                "sourceName": "add_out",
+                                "destinationName": "imageDisplay_path",
+                                "uuid": "39e55853-281f-404e-85a6-6014596e8bc7",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "inExec",
+                    "package": "PyFlowBase",
+                    "fullName": "imageDisplay_inExec",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "54508db6-8d70-49a3-b1b7-49fd70ad587c",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "delay",
+                            "outPinId": 1,
+                            "rhsNodeName": "imageDisplay",
+                            "inPinId": 1,
+                            "lhsNodeUid": "c028f8ca-6a47-45c7-9cf4-7d476e1ff7ad",
+                            "rhsNodeUid": "dbc28dbe-5128-4d22-b381-36a2f94e2b5d"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "inExec",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "d82e5e05-d6de-40fa-870f-ca4c36d3f3d0",
+                                "destinationUUID": "54508db6-8d70-49a3-b1b7-49fd70ad587c",
+                                "sourceName": "delay_outExec",
+                                "destinationName": "imageDisplay_inExec",
+                                "uuid": "9356993f-8ff8-4527-a59f-df6119939b8c",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "failed",
+                    "package": "PyFlowBase",
+                    "fullName": "imageDisplay_failed",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "4d4a4a5f-d475-46dd-8101-90aed568111a",
+                    "linkedTo": [],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "failed",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "outExec",
+                    "package": "PyFlowBase",
+                    "fullName": "imageDisplay_outExec",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "2ebacef5-fe10-4408-9892-e1364944b4a9",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "outExec",
+                        "wires": {}
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "imageDisplay"
+            },
+            "wrapper": {
+                "resize": {
+                    "w": 126.19580419580419,
+                    "h": 157.8750302188311
+                },
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">imageDisplay</p></body></html>",
+                "exposeInputsToCompound": true,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -168.0169491525424,
+            "y": -338.3496503496504
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": "PathLib",
+            "type": "normpath",
+            "owningGraphName": "root",
+            "name": "normpath",
+            "uuid": "16874db2-db80-4cb9-839f-adb4bd221996",
+            "inputs": [
+                {
+                    "name": "path",
+                    "package": "PyFlowBase",
+                    "fullName": "normpath_path",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"D:\\\\VS_code\\\\PyFlow\\\\PyFlow\\\\UI\\\\resources\"",
+                    "uuid": "c5b0ed68-52e7-4696-be60-5a426d76c3f6",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "path",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "out",
+                    "package": "PyFlowBase",
+                    "fullName": "normpath_out",
+                    "dataType": "StringPin",
+                    "direction": 1,
+                    "value": "\"D:\\\\VS_code\\\\PyFlow\\\\PyFlow\\\\UI\\\\resources\"",
+                    "uuid": "32616574-8330-422e-8b27-139f83f56a8f",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "normpath",
+                            "outPinId": 1,
+                            "rhsNodeName": "add",
+                            "inPinId": 1,
+                            "lhsNodeUid": "16874db2-db80-4cb9-839f-adb4bd221996",
+                            "rhsNodeUid": "7d7550a6-a4e9-42c5-8376-0799ad256b8f"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "out",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "32616574-8330-422e-8b27-139f83f56a8f",
+                                "destinationUUID": "2ebf76d7-53eb-41ec-837f-cd7d71efe598",
+                                "sourceName": "normpath_out",
+                                "destinationName": "add_a",
+                                "uuid": "8f33452b-5b6c-4d3a-acf2-1e357e6560a3",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "normpath"
+            },
+            "wrapper": {
+                "collapsed": true,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">normpath</p></body></html>",
+                "exposeInputsToCompound": true,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -300.9244755244755,
+            "y": -179.10069930069932
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": "MathAbstractLib",
+            "type": "add",
+            "owningGraphName": "root",
+            "name": "add",
+            "uuid": "7d7550a6-a4e9-42c5-8376-0799ad256b8f",
+            "inputs": [
+                {
+                    "name": "a",
+                    "package": "PyFlowBase",
+                    "fullName": "add_a",
+                    "dataType": "AnyPin",
+                    "direction": 0,
+                    "value": "\"D:\\\\VS_code\\\\PyFlow\\\\PyFlow\\\\UI\\\\resources\"",
+                    "uuid": "2ebf76d7-53eb-41ec-837f-cd7d71efe598",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "normpath",
+                            "outPinId": 1,
+                            "rhsNodeName": "add",
+                            "inPinId": 1,
+                            "lhsNodeUid": "16874db2-db80-4cb9-839f-adb4bd221996",
+                            "rhsNodeUid": "7d7550a6-a4e9-42c5-8376-0799ad256b8f"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        16,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "a",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "32616574-8330-422e-8b27-139f83f56a8f",
+                                "destinationUUID": "2ebf76d7-53eb-41ec-837f-cd7d71efe598",
+                                "sourceName": "normpath_out",
+                                "destinationName": "add_a",
+                                "uuid": "8f33452b-5b6c-4d3a-acf2-1e357e6560a3",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    },
+                    "currDataType": "StringPin"
+                },
+                {
+                    "name": "b",
+                    "package": "PyFlowBase",
+                    "fullName": "add_b",
+                    "dataType": "AnyPin",
+                    "direction": 0,
+                    "value": "\"\\\\binocular.png\"",
+                    "uuid": "50a3ef4a-9f56-4458-8693-521fde2eb7d6",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeString",
+                            "outPinId": 1,
+                            "rhsNodeName": "add",
+                            "inPinId": 2,
+                            "lhsNodeUid": "0928a40c-f72b-4adc-b704-61618758ad0b",
+                            "rhsNodeUid": "7d7550a6-a4e9-42c5-8376-0799ad256b8f"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        16,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "b",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "5dc13792-107f-4535-8a6f-de0812ffaf8f",
+                                "destinationUUID": "50a3ef4a-9f56-4458-8693-521fde2eb7d6",
+                                "sourceName": "makeString_out",
+                                "destinationName": "add_b",
+                                "uuid": "67ab0295-1509-44bd-bd27-dd6d30fd336b",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    },
+                    "currDataType": "StringPin"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "out",
+                    "package": "PyFlowBase",
+                    "fullName": "add_out",
+                    "dataType": "AnyPin",
+                    "direction": 1,
+                    "value": "\"D:\\\\VS_code\\\\PyFlow\\\\PyFlow\\\\UI\\\\resources\\\\binocular.png\"",
+                    "uuid": "feaa050b-7137-4521-b7fa-137bb74d792d",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "add",
+                            "outPinId": 1,
+                            "rhsNodeName": "imageDisplay",
+                            "inPinId": 2,
+                            "lhsNodeUid": "7d7550a6-a4e9-42c5-8376-0799ad256b8f",
+                            "rhsNodeUid": "dbc28dbe-5128-4d22-b381-36a2f94e2b5d"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        16,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "out",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "feaa050b-7137-4521-b7fa-137bb74d792d",
+                                "destinationUUID": "2a7708dc-363e-45be-93f1-17c4f7b465d3",
+                                "sourceName": "add_out",
+                                "destinationName": "imageDisplay_path",
+                                "uuid": "39e55853-281f-404e-85a6-6014596e8bc7",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    },
+                    "currDataType": "StringPin"
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "add"
+            },
+            "wrapper": {
+                "collapsed": true,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">add</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -231.46433566433566,
+            "y": -133.5454545454545
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": "DefaultLib",
+            "type": "makeString",
+            "owningGraphName": "root",
+            "name": "makeString",
+            "uuid": "0928a40c-f72b-4adc-b704-61618758ad0b",
+            "inputs": [
+                {
+                    "name": "s",
+                    "package": "PyFlowBase",
+                    "fullName": "makeString_s",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"\\\\binocular.png\"",
+                    "uuid": "df617416-f1e1-48a7-9dd7-13433653b3fd",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "s",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "out",
+                    "package": "PyFlowBase",
+                    "fullName": "makeString_out",
+                    "dataType": "StringPin",
+                    "direction": 1,
+                    "value": "\"\\\\binocular.png\"",
+                    "uuid": "5dc13792-107f-4535-8a6f-de0812ffaf8f",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeString",
+                            "outPinId": 1,
+                            "rhsNodeName": "add",
+                            "inPinId": 2,
+                            "lhsNodeUid": "0928a40c-f72b-4adc-b704-61618758ad0b",
+                            "rhsNodeUid": "7d7550a6-a4e9-42c5-8376-0799ad256b8f"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "out",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "5dc13792-107f-4535-8a6f-de0812ffaf8f",
+                                "destinationUUID": "50a3ef4a-9f56-4458-8693-521fde2eb7d6",
+                                "sourceName": "makeString_out",
+                                "destinationName": "add_b",
+                                "uuid": "67ab0295-1509-44bd-bd27-dd6d30fd336b",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "makeString"
+            },
+            "wrapper": {
+                "collapsed": true,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">makeString</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -384.62123300480187,
+            "y": -108.04246525406745
+        }
+    ],
+    "depth": 1,
+    "isRoot": true,
+    "parentGraphName": "None",
+    "fileVersion": "2.0.1",
+    "activeGraph": "root"
+}
